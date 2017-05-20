@@ -20,7 +20,11 @@ class Hs100Platform {
     this.plugs = config['plugs'] || [];
     this.accessories = new Map();
 
-    this.client = new Hs100Api.Client();
+    this.client = new Hs100Api.Client({
+      typeFilter: 'IOT.SMARTPLUGSWITCH'
+    });
+
+    this.log("HS100 Platform Started");
 
     this.client.on('plug-offline', (plug) => {
       var accessory = this.accessories.get(plug.deviceId);
