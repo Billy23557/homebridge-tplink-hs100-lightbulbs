@@ -1,0 +1,40 @@
+{
+  "name": "homebridge-hs100",
+  "version": "2.0.0",
+  "description": "TPLink HS100/HS110 WiFi Smart Plug plugin for Homebridge",
+  "author": "Patrick Seal",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/plasticrake/homebridge-hs100.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plasticrake/homebridge-hs100/issues",
+    "email": "code@plasticrake.com"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "tplink",
+    "hs100",
+    "hs110",
+    "home",
+    "smartplug"
+  ],
+  "engines": {
+    "node": ">=4.4.0",
+    "homebridge": ">=0.3.0"
+  },
+  "dependencies": {
+    "hs100-api": "^0.3.0"
+  },
+  "devDependencies": {
+    "semistandard": "^9.0.0"
+  },
+  "scripts": {
+    "debug": "DEBUG=* homebridge --debug --plugin-path .",
+    "test": "./node_modules/.bin/semistandard",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
+  }
+}
