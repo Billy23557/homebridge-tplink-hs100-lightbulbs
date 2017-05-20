@@ -1,16 +1,16 @@
 {
-  "name": "homebridge-hs100",
-  "version": "2.0.0",
-  "description": "TPLink HS100/HS110 WiFi Smart Plug plugin for Homebridge",
-  "author": "Patrick Seal",
+  "name": "homebridge-tplink-hs100-lightbulbs",
+  "version": "0.0.1",
+  "description": "Homebridge Plugin for TP-Link HS100 Outlets & LB120 Light Bulbs",
+  "author": "William Thompson Jr.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/plasticrake/homebridge-hs100.git"
+    "url": "git://github.com/billy23557/homebridge-tplink-hs100-lightbulbs.git"
   },
   "bugs": {
-    "url": "https://github.com/plasticrake/homebridge-hs100/issues",
-    "email": "code@plasticrake.com"
+    "url": "https://github.com/billy23557/homebridge-tplink-hs100-lightbulbs/issues",
+    "email": "billy23557@gmail.com"
   },
   "keywords": [
     "homebridge-plugin",
@@ -19,7 +19,10 @@
     "hs100",
     "hs110",
     "home",
-    "smartplug"
+    "smartplug",
+    "lb120",
+    "smartbulb",
+    "lightbulb"
   ],
   "engines": {
     "node": ">=4.4.0",
